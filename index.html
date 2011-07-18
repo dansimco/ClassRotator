@@ -18,6 +18,10 @@
         item.addEvents({
           click: function(){
             r.selectItem(item);
+          },
+          touchstart: function(event){
+            event.stop();
+            r.selectItem(item);
           }
         });
       });
