@@ -1,0 +1,116 @@
+#slideshow.coverflow {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  -webkit-perspective: 700px;
+  margin: 40px auto;
+  overflow: visible;
+  overflow-y: visible;
+/*  overflow-x: hidden;*/
+  
+}
+
+#slideshow.coverflow .slide {
+  background-color: #ff9c00;
+  width: 200px;
+  height: 300px;
+  line-height: 280px;
+  text-align : center;
+  color: #333;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: rotateY(0) scale(0);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.2s, left 0.2s;
+  display: none;
+  -webkit-box-reflect:below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0,0,0,0.2)));
+}
+
+#slideshow.coverflow .slide.current {
+  display: block;
+  position: absolute;
+  left: 40%;
+  opacity: 1;
+  -webkit-transform: rotateY(0) scale(1);
+  color: red;
+}
+
+#slideshow.coverflow .slide.next {
+  -webkit-transform: rotateY(-25deg) scale(0.6);  
+  opacity: 0.9;
+  background-color: #ff9c00;
+}
+
+#slideshow.coverflow .slide.next_1{
+  display: block;
+  left: 60%;
+  opacity: 0.9;
+}
+
+#slideshow.coverflow .slide.next_2{
+  display: block;
+  left: 70%;
+  opacity: 0.3;
+}
+
+#slideshow.coverflow .slide.next_3{
+  display: block;
+  left: 80%;
+  opacity: 0.2;
+}
+
+#slideshow.coverflow .slide.next_4{
+  display: block;
+  left: 90%;
+  opacity: 0.1
+}
+
+#slideshow.coverflow .slide.next_5{
+  display: block;
+  left: 100%;
+  opacity: 0;
+}
+
+#slideshow.coverflow .slide.previous {
+  -webkit-transform: rotateY(25deg) scale(0.6);  
+  opacity: 0.9;  
+  background-color: #ff9c00;
+}
+
+#slideshow.coverflow .slide.previous_1{
+  position: absolute;
+  display: block;
+  left: 20%;
+}
+
+#slideshow.coverflow .slide.previous_2{
+  position: absolute;
+  display: block;
+  left: 10%;
+  opacity: 0.4;
+}
+
+#slideshow.coverflow .slide.previous_3{
+  position: absolute;
+  display: block;
+  left: 0%;
+  opacity: 0.3;
+}
+
+#slideshow.coverflow .slide.previous_4{
+  position: absolute;
+  display: block;
+  left: -10%;
+  opacity: 0.1;
+}
+
+#slideshow.coverflow .slide.previous_5{
+  position: absolute;
+  display: block;
+  left: -20%;
+  opacity: 0;
+}
+
+
+
+
+

@@ -1,0 +1,16 @@
+@import 'coverflow.css';
+@import 'thumbnails.css';
+@import 'mapping.css';
+
+body {
+  font-family: "helvetica neue",'helvetica','arial';
+  background-color: #222;
+  padding: 20px;
+  overflow-x: hidden;
+  color: #fafafa;
+  line-height: 1.4;
+}
+
+#slideshow_control {
+  margin-bottom: 15px;
+}
